@@ -1,0 +1,150 @@
+:root {
+  --black: #111111;
+  --text: #a5a5a5;
+  --footer-text: #d9d9d9;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: var(--text);
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.desktop {
+  display: none;
+}
+
+/* Header start */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2em 1.3em;
+  background-color: #fff;
+  height: 5rem;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  color: var(--black);
+  font-weight: 500;
+  line-height: 1.7rem;
+  letter-spacing: 0.1rem;
+  border: 1px solid var(--black);
+  padding: 0.4em 0.5em 0.7em 0.5em;
+  cursor: pointer;
+}
+
+.logo-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.15em;
+}
+
+.logo-bottom {
+  font-size: 2.5rem;
+}
+
+/* Header end */
+
+.banner {
+  margin-top: 0.2em;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
+  color: var(--black);
+  text-align: center;
+  margin: 1.5em 0 0.5em 0;
+}
+
+/* MD size */
+@media screen and (min-width: 890px) {
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+  }
+
+  .nav-item {
+    margin-left: 1.5em;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+  }
+
+  .nav-item a {
+    color: var(--black);
+  }
+
+  .banner {
+    margin-top: 1em;
+  }
+}
+
+/* LG size */
+@media screen and (min-width: 1024px) {
+  .header-container {
+    padding: 1.2em 4em;
+  }
+
+  .logo {
+    padding: 0.4em 0.5em 0.7em 0.5em;
+  }
+
+  .logo-top {
+    padding: 0 0.15em;
+  }
+
+  .logo-bottom {
+    font-size: 2.5rem;
+  }
+
+  .navigation {
+    margin-left: 2em;
+  }
+
+  .nav-item {
+    margin-left: 2em;
+  }
+}
+
+/* XL size */
+@media screen and (min-width: 1280px) {
+  .header-container {
+    padding: 1.2em 10em;
+  }
+
+  .navigation {
+    margin-left: 3em;
+  }
+
+  .nav-item {
+    margin-left: 3em;
+  }
+}

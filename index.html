@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SCIENCE</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="The official website for Community Science Museum. We are a non-profit organization dedicated to providing a fun and educational experience for all ages."
+    />
+    <meta
+      name="keywords"
+      content="Community, Science, Museum, Education, Kids, Teachers, Researchers, Biology, Medicine, Ecology, Evolution, Robotics, AI, Technology, Cosmology"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/hamburger.css" />
+    <link rel="stylesheet" href="./css/dropdown.css" />
+    <link rel="stylesheet" href="./css/news-slider.css" />
+    <link rel="stylesheet" href="./css/swiper.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="logo">
+        <div class="logo-top">
+          <div>comunity</div>
+          <div>museum</div>
+        </div>
+        <div class="logo-bottom">science</div>
+      </div>
+      <nav class="desktop navigation">
+        <div class="nav-item"><a href="index.html">Kids</a></div>
+        <div class="nav-item"><a href="about.html">Teachers</a></div>
+        <div class="nav-item"><a href="exhibits.html">Researchers</a></div>
+        <div class="dropdown-container">
+          <input type="checkbox" id="drop" />
+          <label for="drop">Exhibitions</label>
+          <div class="content">
+            <div><a href="#">Biology & Medicine</a></div>
+            <div><a href="#">Evolution</a></div>
+            <div><a href="#">Robotics & AI</a></div>
+            <div><a href="#">Ecology</a></div>
+            <div><a href="#">Cosmology</a></div>
+          </div>
+        </div>
+      </nav>
+      <div class="hamburger-menu mobile">
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button" for="menu-toggle">
+          <span></span>
+        </label>
+
+        <div class="menu-box">
+          <div><a class="menu-item" href="#">Home</a></div>
+          <div><a class="menu-item" href="#">Exhibitions</a></div>
+          <div><a class="menu-item" href="#">For Kids</a></div>
+          <div><a class="menu-item" href="#">For Teachers</a></div>
+          <div><a class="menu-item" href="#">For Researchers</a></div>
+          <div><a class="menu-item" href="#">Visit Us</a></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="banner">
+        <img
+          class="desktop"
+          src="./images/Desktop_Banner.webp"
+          alt="Banner Museum Picture"
+        />
+        <img
+          class="mobile"
+          src="./images/Mobile_Banner.webp"
+          alt="Banner Museum Picture"
+        />
+      </div>
+      <div class="news">
+        <div class="heading">Latest News</div>
+        <div class="card">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide slide-one">
+                  <div class="news-section">
+                    <h1 class="news-title">Prof Sheila Widnall</h1>
+                    <p class="news-text">
+                      It is our pleasure to announce that Prof Sheila Widnall
+                      from the Massachusetts Institute of Technology will be
+                      delivering 3 lectures on the development of aeronautics
+                      and where the future lies in this exciting 'space'.
+                    </p>
+                  </div>
+                  <img src="/images/Mobile_News_1.png" alt="Aeronautics" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide slide-two">
+                  <div class="news-section">
+                    <h1 class="news-title">A night in Museum</h1>
+                    <p class="news-text">
+                      Get your family together for an exciting night in the
+                      museum as you sleep over beside dinosaurs and science
+                      displays. Bring your own sleeping bag and get ready to
+                      rough it as we go exploring the wonders of science.
+                    </p>
+                  </div>
+                  <img src="/images/MObile_News_2.png" alt="Dinosaurs" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide slide-three">
+                  <div class="news-section">
+                    <h1 class="news-title">Energetica Exhibition</h1>
+                    <p class="news-text">
+                      From the NEMO Science Museum in Amsterdam, the Energetica
+                      exhibition is coming to the Community Science Museum.
+                      Experience the power of the elements. From solar energy
+                      powering lighting, to 'Wind Island'.
+                    </p>
+                  </div>
+                  <img
+                    src="/images/Mobile_News_3.png"
+                    alt="Power of the elements"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

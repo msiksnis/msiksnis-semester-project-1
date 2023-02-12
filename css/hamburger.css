@@ -1,0 +1,95 @@
+:root {
+  --black: #111111;
+  --text: #a5a5a5;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: var(--text);
+  font-size: 15px;
+}
+
+#menu-toggle {
+  opacity: 0;
+}
+
+#menu-toggle:checked ~ .menu-button > span {
+  transform: rotate(45deg);
+}
+#menu-toggle:checked ~ .menu-button > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu-toggle:checked ~ .menu-button > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu-toggle:checked ~ .menu-box {
+  visibility: visible;
+  right: 0;
+}
+
+.menu-button {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 3.1em;
+  right: 1.3em;
+  width: 1.6em;
+  height: 1.6em;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.menu-button > span,
+.menu-button > span::before,
+.menu-button > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--black);
+  transition-duration: 0.25s;
+}
+
+.menu-button > span::before {
+  content: "";
+  top: -8px;
+}
+
+.menu-button > span::after {
+  content: "";
+  top: 8px;
+}
+
+.menu-box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 100px;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 4em 0;
+  background-color: #fff;
+  transition-duration: 0.25s;
+}
+
+.menu-item {
+  display: block;
+  padding: 0.5em 1.3em;
+  color: var(--black);
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: 500;
+  transition-duration: 0.25s;
+}
+
+.menu-item:hover {
+  background-color: #f0f0f0;
+}

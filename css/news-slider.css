@@ -1,0 +1,36 @@
+#news-slider {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100vw;
+  float: left;
+  position: relative;
+}
+
+#slide-container {
+  width: 400%;
+  position: relative;
+  left: 0;
+  /* animation: scroller 20s infinite; */
+}
+
+@keyframes scroller {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-100vw);
+  }
+  66% {
+    transform: translateX(-200vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#slider {
+  margin: 0 auto;
+}
