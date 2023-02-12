@@ -40,7 +40,7 @@ body {
   width: 1.6em;
   height: 1.6em;
   cursor: pointer;
-  z-index: 10;
+  z-index: 999999;
 }
 
 .menu-button > span,

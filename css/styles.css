@@ -29,7 +29,10 @@ a {
   padding: 1.2em 1.3em;
   background-color: #fff;
   height: 5rem;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .logo {
@@ -56,6 +59,9 @@ a {
 }
 
 /* Header end */
+main {
+  padding-top: 7.5rem;
+}
 
 .banner {
   margin-top: 0.2em;
