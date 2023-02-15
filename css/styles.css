@@ -186,6 +186,20 @@ footer {
     margin-top: 1em;
   }
 
+  .social-icons {
+    padding-bottom: 3em;
+    transform: scale(1);
+  }
+
+  .social-icons svg {
+    transition: all 0.2s ease-in-out;
+  }
+
+  .social-icons svg:hover {
+    transform: scale(1.07);
+    transition: all 0.2s ease-in-out;
+  }
+
   .footer-content {
     justify-content: space-around;
   }
