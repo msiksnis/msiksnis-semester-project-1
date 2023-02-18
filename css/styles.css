@@ -33,6 +33,7 @@ a {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 999;
 }
 
 .logo {
@@ -81,12 +82,12 @@ main {
   margin: 1.5em 0 0.5em 0;
 }
 
-.kids-container {
-  margin: 0 auto;
-  display: flex;
+.news {
+  margin-top: 1.5em;
 }
 
-.kids-container svg {
+.swiffy-container {
+  margin: 2em auto;
 }
 
 footer {
@@ -186,6 +187,10 @@ footer {
     margin-top: 1em;
   }
 
+  .news {
+    margin-top: 4em;
+  }
+
   .social-icons {
     padding-bottom: 3em;
     transform: scale(1);
@@ -196,7 +201,7 @@ footer {
   }
 
   .social-icons svg:hover {
-    transform: scale(1.07);
+    transform: scale(1);
     transition: all 0.2s ease-in-out;
   }
 
@@ -270,6 +275,14 @@ footer {
   .footer-links-right {
     margin-right: 2.5em;
   }
+
+  .news {
+    margin-top: 6em;
+  }
+
+  .swiffy-container {
+    padding: 0 4em;
+  }
 }
 
 /* XL size */
@@ -284,5 +297,9 @@ footer {
 
   .nav-item {
     margin-left: 3em;
+  }
+
+  .swiffy-container {
+    padding: 1em 10em;
   }
 }

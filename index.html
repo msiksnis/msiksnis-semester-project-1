@@ -19,14 +19,20 @@
       href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:wght@100;200;300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/hamburger.css" />
     <link rel="stylesheet" href="./css/dropdown.css" />
-    <link rel="stylesheet" href="./css/swiper.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="./css/swiffy.css" />
   </head>
   <body>
     <header class="header-container">
@@ -39,8 +45,8 @@
       </a>
       <nav class="desktop navigation">
         <div class="nav-item"><a href="/kids.html">Kids</a></div>
-        <div class="nav-item"><a href="about.html">Teachers</a></div>
-        <div class="nav-item"><a href="exhibits.html">Researchers</a></div>
+        <div class="nav-item"><a href="/about.html">Teachers</a></div>
+        <div class="nav-item"><a href="/exhibits.html">Researchers</a></div>
         <div class="dropdown-hover">
           <div class="dropdown-button">
             <div class="">Exhibitions</div>
@@ -85,80 +91,127 @@
       </div>
       <div class="news">
         <div class="heading">Latest News</div>
-        <div class="card">
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="slide slide-one">
-                  <div class="news-section">
-                    <h1 class="news-title">Prof Sheila Widnall</h1>
-                    <p class="news-text">
-                      It is our pleasure to announce that Prof Sheila Widnall
-                      from the Massachusetts Institute of Technology will be
-                      delivering 3 lectures on the development of aeronautics
-                      and where the future lies in this exciting 'space'.
-                    </p>
-                  </div>
-                  <img
-                    class="mobile"
-                    src="/images/Mobile_News_1.png"
-                    alt="Aeronautics"
-                  />
-                  <img
-                    class="desktop"
-                    src="/images/Desktop_News_1.webp"
-                    alt="Aeronautics"
-                  />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slide slide-two">
-                  <div class="news-section">
-                    <h1 class="news-title">A Night in Museum</h1>
-                    <p class="news-text">
+        <div class="swiffy-container">
+          <div
+            class="swiffy-slider slider-nav-arrow slider-nav-sm slider-nav-autoplay slider-nav-autopause slider-indicators-dark slider-indicators-outside slider-indicators-highlight slider-indicators-sm"
+            data-slider-nav-autoplay-interval="10000"
+          >
+            <ul class="slider-container">
+              <li>
+                <div class="swiffy-slide">
+                  <div class="swiffy-news-section">
+                    <h1 class="swiffy-news-title">A Night in Museum</h1>
+                    <p class="swiffy-news-text">
                       Get your family together for an exciting night in the
                       museum as you sleep over beside dinosaurs and science
                       displays. Bring your own sleeping bag and get ready to
                       rough it as we go exploring the wonders of science.
                     </p>
                   </div>
-                  <img
-                    class="mobile"
-                    src="/images/Mobile_News_2.png"
-                    alt="Dinosaurs"
-                  />
-                  <img
-                    class="desktop"
-                    src="/images/Desktop_News_2.webp"
-                    alt="Dinosaurs"
-                  />
+                  <div class="swiffy-images">
+                    <img
+                      class=""
+                      src="/images/forSlider/t-rex.webp"
+                      alt="t-rex"
+                    />
+                    <img
+                      class="desktop"
+                      src="/images/forSlider/elephent.webp"
+                      alt="elephent"
+                    />
+                    <img
+                      class="desktop"
+                      src="/images/forSlider/bigfoot.webp"
+                      alt="bigboot"
+                    />
+                    <img
+                      class="desktop"
+                      src="/images/forSlider/prehistoric-man.webp"
+                      alt="prehistoric-man"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slide slide-three">
-                  <div class="news-section">
-                    <h1 class="news-title">Energetica Exhibition</h1>
-                    <p class="news-text">
+              </li>
+              <li>
+                <div class="swiffy-slide">
+                  <div class="swiffy-news-section">
+                    <h1 class="swiffy-news-title">Energetica Exhibition</h1>
+                    <p class="swiffy-news-text">
                       From the NEMO Science Museum in Amsterdam, the Energetica
                       exhibition is coming to the Community Science Museum.
                       Experience the power of the elements. From solar energy
                       powering lighting, to 'Wind Island'.
                     </p>
                   </div>
-                  <img
-                    class="mobile"
-                    src="/images/Mobile_News_3.png"
-                    alt="Power of the elements"
-                  />
-                  <img
-                    class="desktop"
-                    src="/images/Desktop_News_3.webp"
-                    alt="Power of the elements"
-                  />
+                  <div class="swiffy-images">
+                    <img
+                      class=""
+                      src="/images/forSlider/turbines.webp"
+                      alt="turbines"
+                    />
+                    <img
+                      class="desktop"
+                      src="/images/forSlider/windmill.webp"
+                      alt="windmill"
+                    />
+                    <img
+                      class="desktop"
+                      src="/images/forSlider/sun-wind.webp"
+                      alt="sun-wind"
+                    />
+                    <img
+                      class="desktop"
+                      src="/images/forSlider/solar-plant.webp"
+                      alt="solar-plant"
+                    />
+                  </div>
                 </div>
-              </div>
+              </li>
+              <li>
+                <div class="swiffy-slide">
+                  <div class="swiffy-news-section">
+                    <h1 class="swiffy-news-title">Prof Sheila Widnall</h1>
+                    <p class="swiffy-news-text">
+                      It is our pleasure to announce that Prof Sheila Widnall
+                      from the Massachusetts Institute of Technology will be
+                      delivering 3 lectures on the development of aeronautics
+                      and where the future lies in this exciting 'space'.
+                    </p>
+                  </div>
+                  <div class="swiffy-images">
+                    <img
+                      class=""
+                      src="/images/forSlider/spaceman-suit.webp"
+                      alt="spaceman-suit"
+                    />
+                    <img
+                      class="desktop"
+                      src="/images/forSlider/daniel-eledut.webp"
+                      alt="daniel-eledut"
+                    />
+                    <img
+                      class="desktop"
+                      src="/images/forSlider/old-plane.webp"
+                      alt="old-plane"
+                    />
+                    <img
+                      class="desktop"
+                      src="/images/forSlider/concept-drone.webp"
+                      alt="concept-drone"
+                    />
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <button type="button" class="slider-nav"></button>
+            <button type="button" class="slider-nav slider-nav-next"></button>
+
+            <div class="slider-indicators">
+              <button class="active"></button>
+              <button></button>
+              <button></button>
             </div>
-            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
@@ -286,7 +339,5 @@
         <div class="rights">© 2023 All Rights Reserved</div>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./js/main.js"></script>
   </body>
 </html>
