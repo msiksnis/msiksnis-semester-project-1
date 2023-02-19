@@ -132,6 +132,10 @@ footer {
   color: #d9d9d9;
 }
 
+.hide {
+  display: none;
+}
+
 .footer-container {
   width: 100%;
 }
