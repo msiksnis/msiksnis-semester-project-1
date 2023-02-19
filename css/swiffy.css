@@ -46,9 +46,26 @@
   object-fit: cover;
 }
 
+@media screen and (min-width: 550px) {
+  .swiffy-slide {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .first-images img,
+  .second-images img,
+  .swiffy-news-text {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 890px) {
   .swiffy-slide {
     max-width: 100%;
+    display: block;
   }
 
   .swiffy-news-section {
@@ -73,10 +90,7 @@
 
   .swiffy-images {
     position: absolute;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 2em;
-    column-gap: 4em;
+    height: 100%;
     top: 50%;
     left: 50%;
     bottom: auto;
@@ -93,6 +107,32 @@
     transition: all 0.3s ease-in-out;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+
+  .first-images,
+  .second-images {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4em;
+    transform: translate(-41%, -50%);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .swiffy-images:hover .first-images {
+    transition: all 0.6s ease-in-out;
+    transform: translate(-48%, 10%);
+  }
+  .swiffy-images:hover .second-images {
+    transition: all 0.6s ease-in-out;
+    transform: translate(-48%, -110%);
+  }
+
+  /* .swiffy-images:hover img {
+    transition: all 0.6s ease-in-out;
+    transform: scale(1.1);
+  } */
 
   .swiffy-images:hover {
     transition: all 0.6s ease-in-out;

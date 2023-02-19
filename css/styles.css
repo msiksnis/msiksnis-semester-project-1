@@ -1,6 +1,6 @@
 :root {
   --black: #111111;
-  --text: #a5a5a5;
+  --text: #636363;
   --footer-text: #d9d9d9;
 }
 
@@ -79,7 +79,24 @@ main {
   letter-spacing: 0.03rem;
   color: var(--black);
   text-align: center;
-  margin: 1.5em 0 0.5em 0;
+  margin: 1.5em 1.3em 0 1.3em;
+}
+
+.heaeding-borders {
+  margin-bottom: 1em 0 2em 0;
+}
+
+.border-one {
+  border-bottom: 1px solid var(--text);
+  width: 66%;
+  margin-top: 0.3em;
+}
+
+.border-two {
+  border-bottom: 1px solid var(--text);
+  width: 66%;
+  margin: 0.3em 0 0 0;
+  float: right;
 }
 
 .news {
@@ -88,6 +105,23 @@ main {
 
 .swiffy-container {
   margin: 2em auto;
+}
+
+.visit-us-section {
+  padding: 0 1.3em 4em 1.3em;
+}
+
+.subheading {
+  font-size: 1.3rem;
+  text-decoration: underline;
+  letter-spacing: 0.03rem;
+  color: var(--black);
+  text-align: center;
+  margin: 1.5em;
+}
+
+.visit-us-info {
+  font-weight: 300;
 }
 
 footer {
@@ -184,7 +218,7 @@ footer {
   }
 
   .banner {
-    margin-top: 1em;
+    padding: 1em 0 2em 0;
   }
 
   .news {
@@ -203,6 +237,18 @@ footer {
   .social-icons svg:hover {
     transform: scale(1);
     transition: all 0.2s ease-in-out;
+  }
+
+  .visit-us-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2em 0;
+    gap: 2em;
+  }
+
+  .visit-us-column {
+    background: #f1f1f1;
+    padding: 1.5em;
   }
 
   .footer-content {
@@ -283,6 +329,14 @@ footer {
   .swiffy-container {
     padding: 0 4em;
   }
+
+  .visit-us-grid {
+    gap: 4em;
+  }
+
+  .visit-us-info {
+    margin-top: 1em;
+  }
 }
 
 /* XL size */
@@ -299,7 +353,15 @@ footer {
     margin-left: 3em;
   }
 
+  .banner {
+    margin-bottom: 4em;
+  }
+
   .swiffy-container {
     padding: 1em 10em;
+  }
+
+  .visit-us-section {
+    padding: 2em 10em 4em 10em;
   }
 }
