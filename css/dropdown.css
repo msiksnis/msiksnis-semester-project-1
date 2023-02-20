@@ -50,8 +50,15 @@
   text-align: center;
 }
 
-.dropdown-links a:hover {
-  background-color: #f0f0f0;
+.dropdown-link {
+  background: linear-gradient(0deg, #f0f0f0, #f0f0f0) no-repeat right bottom / 0
+    var(--bg-h);
+  transition: background-size 350ms;
+  --bg-h: 100%;
+}
+.dropdown-link:where(:hover, :focus-visible) {
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
 }
 
 .dropdown-hover:hover .dropdown-arrow {
