@@ -46,6 +46,16 @@
   object-fit: cover;
 }
 
+.slider-nav {
+  opacity: 0;
+}
+
+@media screen and (max-width: 992px) {
+  button.active {
+    margin-top: -2px; /* without this, the active button will be 2px lower than the other buttons */
+  }
+}
+
 @media screen and (min-width: 550px) {
   .swiffy-slide {
     max-width: 600px;
