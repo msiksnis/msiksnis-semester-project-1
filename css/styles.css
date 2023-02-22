@@ -20,6 +20,13 @@ a {
   display: none;
 }
 
+.video {
+  position: fixed;
+  top: 10em;
+  width: 101%;
+  z-index: -1;
+}
+
 /* Header start */
 .header-container {
   display: flex;
@@ -61,7 +68,7 @@ a {
 
 /* Header end */
 main {
-  padding-top: 7.5rem;
+  padding-top: 7.5em;
 }
 
 .banner {
@@ -341,14 +348,12 @@ footer {
   .kids-content {
     display: flex;
     margin-bottom: 2em;
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
       rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     transition: all 0.2s ease-in-out;
   }
 
   .kids-content:hover {
-    /* transform: scale(1.01); */
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
       rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     transition: all 0.2s ease-in-out;
@@ -370,7 +375,7 @@ footer {
   .kids-text {
     flex-basis: 300px;
     flex-grow: 1;
-    font-size: 1.2em;
+    font-size: 1.1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -529,6 +534,6 @@ footer {
   }
 
   .kids-text {
-    font-size: 1.3em;
+    font-size: 1.3rem;
   }
 }
