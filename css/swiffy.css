@@ -25,6 +25,7 @@
   letter-spacing: 0.02rem;
   text-align: center;
   padding-top: 0.6em;
+  margin: 1em 0;
 }
 
 .swiffy-news-text {
@@ -79,7 +80,7 @@
   }
 
   .swiffy-news-section {
-    width: 30%;
+    width: 33%;
     padding-left: 7em;
     height: 100%;
     display: flex;
