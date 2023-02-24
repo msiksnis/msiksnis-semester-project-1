@@ -25,6 +25,7 @@ a {
   top: 10em;
   width: 101%;
   z-index: -1;
+  opacity: 0.2;
 }
 
 /* Header start */
@@ -86,17 +87,17 @@ main {
   letter-spacing: 0.03rem;
   color: var(--black);
   text-align: center;
-  margin: 1.5em 1.3em 0 1.3em;
+  margin: 1em 1.3em 0.5em 1.3em;
 }
 
 .heaeding-borders {
-  margin-bottom: 1em 0 2em 0;
+  margin: 0 1.3em 2em 1.3em;
 }
 
 .border-one {
   border-bottom: 1px solid var(--text);
   width: 66%;
-  margin-top: 0.3em;
+  /* margin-top: 0.3em; */
 }
 
 .border-two {
@@ -143,23 +144,28 @@ main {
 }
 
 /* Kids start */
-.kids-banner img {
+.content-banner img {
   width: 100%;
 }
 
-.kids-section {
+.section {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2em;
+  /* gap: 2em; */
   margin: 2em 0 5em 0;
 }
 
-.kids-content img {
+.content {
+  margin-bottom: 2em;
+}
+
+.content img {
   margin-bottom: -0.4em;
 }
 
-.kids-text {
+.content-text {
   color: var(--text);
+  font-weight: 300;
   padding: 1.5em 1.3em;
   background-color: #f3f3f3;
 }
@@ -209,7 +215,7 @@ footer {
 .footer-right-title {
   font-size: 1.1rem;
   text-decoration: underline;
-  margin-left: 1em;
+  margin-left: 0.3em;
   margin-bottom: 0.7em;
 }
 
@@ -236,18 +242,18 @@ footer {
 
 /* Extra media screen for Kids section on screens between 550px and 889px */
 @media screen and (min-width: 550px) and (max-width: 889px) {
-  .kids-section {
+  .section {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .kids-content {
+  .content {
     max-width: 550px;
-    margin: 1.5em 0;
+    margin: 1.5em 0 2em 0;
   }
 
-  .kids-text {
+  .content-text {
     padding: 1.5em 4em;
   }
 }
@@ -341,41 +347,40 @@ footer {
     padding: 1.5em;
   }
 
-  .kids-section {
+  .section {
     padding: 0 1.3em;
   }
 
-  .kids-content {
+  .content {
     display: flex;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
       rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     transition: all 0.2s ease-in-out;
   }
 
-  .kids-content:hover {
+  .content:hover {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
       rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     transition: all 0.2s ease-in-out;
   }
 
-  .kids-content:nth-child(even) {
+  .content:nth-child(even) {
     flex-direction: row-reverse;
   }
 
-  .kids-content img {
+  .content img {
     margin-bottom: 0;
   }
 
-  .kids-banner {
+  .content-banner {
     flex-basis: 300px;
     flex-grow: 1;
   }
 
-  .kids-text {
+  .content-text {
     flex-basis: 300px;
     flex-grow: 1;
-    font-size: 1.1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -498,7 +503,7 @@ footer {
     margin-top: 1em;
   }
 
-  .kids-section {
+  .section {
     padding: 0 4em;
   }
 }
@@ -529,11 +534,11 @@ footer {
     padding: 2em 10em 4em 10em;
   }
 
-  .kids-section {
+  .section {
     padding: 0 10em;
   }
 
-  .kids-text {
-    font-size: 1.3rem;
+  .content-text {
+    font-size: 1.2rem;
   }
 }
