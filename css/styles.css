@@ -94,6 +94,10 @@ main {
   margin: 0 1.3em 2em 1.3em;
 }
 
+.heading-borders {
+  margin: 0 1.3em;
+}
+
 .border-one {
   border-bottom: 1px solid var(--text);
   width: 66%;
@@ -168,6 +172,46 @@ main {
   font-weight: 300;
   padding: 1.5em 1.3em;
   background-color: #f3f3f3;
+}
+
+.exhibits-container {
+  display: flex;
+  background: #f5f5f5;
+  margin: 2em 0 4em 0;
+  padding-right: 10em;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.exhibits-container::-webkit-scrollbar {
+  display: none;
+}
+
+.exhibit {
+  flex: none;
+  max-width: 70vw;
+  padding: 1.3em 0.5em 1.3em 1.3em;
+  scroll-snap-align: start;
+}
+
+.exhibit img {
+  width: 100%;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.exhibit h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--black);
+  margin: 0.5em 0;
+}
+
+.exhibit h4 {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--text);
+  margin: 0;
 }
 
 footer {
