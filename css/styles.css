@@ -5,10 +5,11 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: "Poppins", sans-serif;
   color: var(--text);
+  max-width: 1920px;
 }
 
 a {
@@ -193,7 +194,7 @@ main {
 
 .exhibit {
   flex: none;
-  max-width: 70vw;
+  max-width: 300px;
   padding: 1.3em 0.5em 1.3em 1.3em;
   scroll-snap-align: start;
 }
@@ -215,7 +216,7 @@ main {
   font-size: 1rem;
   font-weight: 300;
   color: var(--text);
-  margin: 0;
+  margin: 0 1em 0 0;
 }
 
 footer {
@@ -435,6 +436,53 @@ footer {
     padding: 0 4em;
   }
 
+  .exhibits {
+    margin: 4em 0 8em 0;
+  }
+
+  .exhibits-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2.5em;
+    background: #f0f0f0;
+    margin: 3em 0 0 0;
+    padding: 1.5em 1.5em 3em 1.5em;
+    overflow-x: unset;
+  }
+
+  .exhibit {
+    grid-column: span 2;
+    max-width: 450px;
+    border: 1px solid #d6d6d6;
+    border-radius: 0.2em;
+    padding: 0.5em 0.5em 1em 0.5em;
+    margin: 0 auto;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .exhibit:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Dealing with 2 orphan items in the grid */
+  .exhibit:last-child:nth-child(3n - 1) {
+    grid-column-end: -2;
+  }
+
+  .exhibit:nth-last-child(2):nth-child(3n + 1) {
+    grid-column-end: 4;
+  }
+
+  /* This will senter the last row in case there is only 1 orphan items in the grid */
+  .exhibit:last-child:nth-child(3n - 2) {
+    grid-column-end: 5;
+  }
+
+  .exhibit h4 {
+    font-size: 0.9rem;
+  }
+
   .footer-content {
     justify-content: space-around;
   }
@@ -554,6 +602,10 @@ footer {
   .section {
     padding: 0 4em;
   }
+
+  .exhibits {
+    margin: 4em 4em 8em 4em;
+  }
 }
 
 /* XL size */
@@ -588,5 +640,9 @@ footer {
 
   .content-text {
     font-size: 1.2rem;
+  }
+
+  .exhibits {
+    margin: 4em 10em 8em 10em;
   }
 }

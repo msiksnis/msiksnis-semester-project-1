@@ -106,7 +106,7 @@
     left: 50%;
     bottom: auto;
     padding: 4em 100em;
-    background: #00000020;
+    background: #00000005;
     transform: translate(-41%, -50%);
     transition: all 0.5s ease-in-out;
   }
@@ -139,11 +139,6 @@
     transition: all 0.6s ease-in-out;
     transform: translate(-48%, -110%);
   }
-
-  /* .swiffy-images:hover img {
-    transition: all 0.6s ease-in-out;
-    transform: scale(1.1);
-  } */
 
   .swiffy-images:hover {
     transition: all 0.6s ease-in-out;
