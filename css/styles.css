@@ -219,6 +219,15 @@ main {
   margin: 0 1em 0 0;
 }
 
+.exhibits-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10em;
+}
+
+.exhibit {
+}
+
 footer {
   display: flex;
   justify-content: center;
