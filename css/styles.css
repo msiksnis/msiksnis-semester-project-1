@@ -80,7 +80,7 @@ main {
 
 .banner img {
   width: 100%;
-  margin-bottom: 1.7em;
+  margin-bottom: 1.9em;
 }
 
 .title-box {
@@ -89,6 +89,7 @@ main {
   font-size: calc(1.1rem + 1vw);
   white-space: nowrap;
   font-weight: 500;
+  min-width: 10rem;
   color: var(--black);
   background-color: white;
   text-transform: uppercase;
