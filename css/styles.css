@@ -26,7 +26,7 @@ a {
   top: 10em;
   width: 101%;
   z-index: -1;
-  opacity: 0.2;
+  opacity: 0.1;
 }
 
 /* Header start */
@@ -256,7 +256,60 @@ main {
   margin-bottom: 10em;
 }
 
-.exhibit {
+/* This exhibition-padding is for the content not be hidden behind the header when pressed on jump link (by id) */
+.exhibition-padding {
+  height: 8em;
+}
+
+.exhibitions-content {
+  margin-top: -6em;
+}
+
+.exhibition {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.exhibition-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.exhibition h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--black);
+  padding: 1.5em 0 0 0;
+  margin: 0;
+  text-align: center;
+  background-color: #f3f3f3;
+}
+
+.exhibition-text {
+  padding: 1.3em;
+  color: var(--text);
+  font-weight: 300;
+  letter-spacing: 0.03rem;
+  background-color: #f3f3f3;
+}
+
+.exhibition-buttom-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  background-color: #f3f3f3;
+}
+
+.exhibition-buttom-images img {
+  width: 100%;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.break {
+  margin-bottom: 0.8em;
 }
 
 footer {
@@ -544,6 +597,30 @@ footer {
 
   .footer-content {
     justify-content: space-around;
+  }
+
+  .exhibitions-content {
+    margin-bottom: 6em;
+  }
+
+  .exhibitions-content {
+    margin-top: -4em;
+  }
+
+  /* This exhibition-padding is for the content not be hidden behind the header when pressed on jump link (by id) */
+  .exhibition-padding {
+    height: 9em;
+  }
+
+  .exhibition h2 {
+    font-size: 2.5rem;
+    padding-bottom: 1em;
+  }
+
+  .exhibition-text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding-bottom: 2em 1.5em;
   }
 
   .footer-left {
