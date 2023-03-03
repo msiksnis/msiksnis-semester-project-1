@@ -21,10 +21,6 @@ a {
   display: none;
 }
 
-.hidden {
-  display: none;
-}
-
 .video {
   position: fixed;
   top: 10em;
