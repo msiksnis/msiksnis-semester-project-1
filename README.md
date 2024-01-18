@@ -1,5 +1,7 @@
 # msiksnis-semester-project-1
 
+![homepage](/images/museum-homepage.png)
+
 ## Project Overview
 
 This project showcases web development skills using HTML and CSS, featuring several pages with different themes and purposes.
